@@ -22,6 +22,8 @@
       --link-hover:#000000;
       --radius: 16px;
       --hoverbg:#F2F4FA;
+      --icon-accent: #6F73D2;
+      --icon-accent-hover: #3E4299;
     }
 
     html{ scroll-behavior:smooth; }
@@ -62,20 +64,21 @@
     }
     .email{ color:var(--muted); font-size: 14px; }
 
-    .icons{ list-style:none; padding:0; margin:0; display:flex; gap:12px; flex-wrap:wrap; }
+    .icons{ list-style:none; padding:0; margin:0; display:flex; gap:6px; flex-wrap:wrap; }
     .icons a{
-      color: var(--muted);
-      font-size: 14px;
-      padding: 8px 10px;                           /* ✅ bigger tap target */
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      min-height: 40px;                            /* ✅ tap */
+      color: var(--icon-accent);
+      background: none;
+      border: none;
+      padding: 6px;
+      border-radius: 0;
+    }
+    .icons a:hover{
+      color: var(--icon-accent-hover);
+      background: none;
     }
     .icons a .linkicon{
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       fill: currentColor;
       opacity: 0.85;
       flex: 0 0 auto;
@@ -161,7 +164,11 @@
         </li>
         <li>
           <a href="mletey.pdf">
-            <svg class="linkicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2.5L19.5 10H14zM8 13h8v2H8zm0 4h8v2H8z" /></svg>
+            <svg class="linkicon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+              <path d="M8 13h8M8 17h8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
           </a>
         </li>
         <li>
