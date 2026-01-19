@@ -31,9 +31,9 @@
       margin:0;
       background:var(--bg);
       color:var(--fg);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      font-size: clamp(16px, 0.6vw + 14px, 18px);  /* ✅ responsive */
-      line-height: 1.72;                            /* ✅ easier reading */
+      font-family: Charter, "Source Serif 4", "Libre Baskerville", Georgia, serif;
+      font-size: clamp(16px, 0.6vw + 14px, 18px);
+      line-height: 1.72;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -84,7 +84,6 @@
       flex: 0 0 auto;
     }
     .icons a:hover{ color: var(--fg); background: var(--hoverbg); text-decoration:none; }
-
     .intro{
       display:flex;
       gap:22px;
@@ -92,14 +91,17 @@
       margin-top: 22px;
       flex-direction: row-reverse;                 /* photo on right on desktop */
     }
+    .intro p{
+      font-size: 0.95em;
+    }
     .avatar{
       width: 140px;
-      height: 140px;
-      border-radius: 999px;
+      height: 140px;          /* same size as before */
+      border-radius: 12px;    /* square with soft corners */
       border: none;
       background: transparent;
       object-fit: cover;
-      flex:0 0 auto;
+      flex: 0 0 auto;
       box-shadow: none;
     }
 
