@@ -144,10 +144,13 @@
       margin-bottom: 6px;
     }
     .paper-title{
-      display:block;
-      font-weight: 650;
-      margin: 2px 0 6px;
-      word-break: break-word;
+      color: #52527D;         
+      font-weight: 600;
+    }
+    
+    .paper-title:hover{
+      color: #000000;
+      text-decoration: underline;
     }
     .paper-meta{ color: var(--muted); font-size: 14px; }
 
@@ -206,6 +209,10 @@
 
     <div class="section" id="pubs">
       <h4>Publications & preprints</h4>
+      .section h4{
+        color: var(--link);        /* your existing purple */
+        font-weight: 650;
+      }
 
       <div class="paper">
         <span class="conf-tag">Under Submission at ICLR 2026</span>
